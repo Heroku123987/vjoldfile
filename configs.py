@@ -9,13 +9,13 @@ class Config(object):
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "MoneyKamalo.com")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "0eefb93e1e3ce9470a7033115ceb1bad13a9d674")
   BOT_OWNER = int(os.environ.get("BOT_OWNER", "1452198353"))
-  DATABASE_URL = os.environ.get("DATABASE_URL", "")
+  DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://sushankm16:4i1WAfPYKWyqPIDD@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority")
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002143564040")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002059408554"))
-  BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
+  BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "0").split())
   FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
   BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
-  BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "").split()))
+  BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "0").split()))
   OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
   ABOUT_BOT_TEXT = f"""
 This is a Permanent FileStore Bot. 
